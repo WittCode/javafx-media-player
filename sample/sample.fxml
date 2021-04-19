@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="vboxParent" alignment="CENTER" minHeight="0.0" minWidth="0.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <MediaView fx:id="mvVideo" />
+   <Slider fx:id="sliderTime" style="-fx-cursor: hand;">
+      <padding>
+         <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+      </padding></Slider>
+
+
+    <HBox fx:id="hBoxControls" alignment="CENTER_LEFT">
+        <Button fx:id="buttonPPR" style="-fx-cursor: hand;">
+         <HBox.margin>
+            <Insets left="15.0" />
+         </HBox.margin></Button>
+      <HBox fx:id="hboxVolume" alignment="CENTER">
+         <children>
+            <Label fx:id="labelVolume" style="-fx-cursor: hand;">
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Slider fx:id="sliderVolume" max="1.0" style="-fx-cursor: hand;" />
+         </children>
+         <HBox.margin>
+            <Insets left="5.0" />
+         </HBox.margin>
+      </HBox>
+      <Label fx:id="labelCurrentTime" style="-fx-cursor: hand;">
+         <HBox.margin>
+            <Insets left="10.0" />
+         </HBox.margin>
+         <font>
+            <Font name="JetBrains Mono Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="labelTotalTime" style="-fx-cursor: hand;">
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+         <font>
+            <Font name="JetBrains Mono Bold" size="18.0" />
+         </font></Label>
+      <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+         <children>
+            <Label fx:id="labelSpeed" alignment="CENTER" style="-fx-cursor: hand;">
+               <font>
+                  <Font name="JetBrains Mono Bold" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin></Label>
+            <Label fx:id="labelFullScreen" alignment="CENTER" contentDisplay="CENTER" style="-fx-cursor: hand;">
+               <padding>
+                  <Insets right="10.0" />
+               </padding></Label>
+         </children>
+      </HBox>
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+      <padding>
+         <Insets bottom="10.0" />
+      </padding>
+    </HBox>
+
+</VBox>
